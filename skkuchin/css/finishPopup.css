@@ -1,0 +1,101 @@
+@font-face{
+    src: url("../font/NanumSquareRoundL.ttf");
+    font-family: "NN";
+}
+
+@font-face{
+    src: url("../font/NanumSquareRoundOTFL.otf") format("truetype");
+    font-family: "NN";
+    font-weight: 100;
+}
+
+@font-face{
+    src: url("../font/NanumSquareRoundOTFR.otf") format("truetype");
+    font-family: "NN";
+    font-weight: 400;
+}
+
+@font-face{
+    src: url("../font/NanumSquareRoundOTFB.otf") format("truetype");
+    font-family: "NN";
+    font-weight: 700;
+}
+
+@font-face{
+    src: url("../font/NanumSquareRoundOTFEB.otf") format("truetype");
+    font-family: "NN";
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 800px){
+    *{
+        font-family: "NN";
+        margin: 0;
+    }
+
+    /* 팝업창을 제외한 배경 투명하게 */
+    .finishPopup_wrap{
+        background-color: rgba(0,0,0, .2);
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        display:flex;
+        padding:20px;
+    }
+
+    /* 팝업창 */
+    .finishPopup_box {
+        width: 100%;
+        background-color: white;
+        border-radius: 0.8rem;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 200px;
+    }
+
+    /* '밥약 마감하시겠습니까?' 글씨 */
+    .finishPopup_text {
+        font-size: 16px;
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+
+    /* 두 개의 버튼 감싸는 div */
+    .finishPopup_buttonDiv {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* 두 개의 버튼 공통 css */
+    .finishPopup_button {
+        border: none;
+        margin: 10px;
+        border-radius: 0.9rem;
+        height: 55px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    /* 확인 버튼 */
+    #finishPopup_ok {
+        background-color: #FFCE00;
+        color: white;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    /* 취소 버튼 */
+    #finishPopup_cancel {
+        background-color: white;
+        color: #FFCE00;
+        border: 1px solid #FFCE00;
+        width: 100%;
+        margin-right: 20px;
+    }
+}
